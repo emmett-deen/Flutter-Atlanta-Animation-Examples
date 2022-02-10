@@ -4,7 +4,8 @@ import 'package:get/get.dart';
 
 class HomeController extends GetxController {
   final List<DrawerItem> drawerItems = [
-    DrawerItem(title: 'Simple Animations', route: Routes.simpleAnimation)
+    DrawerItem(title: 'Simple Animation', route: Routes.simpleAnimation),
+    DrawerItem(title: 'Grid Animation', route: Routes.gridAnimation),
   ];
 
   Future<void> navigateTo(String route) async {
