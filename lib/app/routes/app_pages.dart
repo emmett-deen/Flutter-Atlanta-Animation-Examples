@@ -1,11 +1,15 @@
 import 'package:get/get.dart';
 
+import 'package:flutter_atlanta_animation_examples/app/modules/custom_painter_animation/bindings/custom_painter_animation_binding.dart';
+import 'package:flutter_atlanta_animation_examples/app/modules/custom_painter_animation/views/custom_painter_animation_view.dart';
 import 'package:flutter_atlanta_animation_examples/app/modules/grid_animation/bindings/grid_animation_binding.dart';
 import 'package:flutter_atlanta_animation_examples/app/modules/grid_animation/views/grid_animation_view.dart';
 import 'package:flutter_atlanta_animation_examples/app/modules/hero_detail/bindings/hero_detail_binding.dart';
 import 'package:flutter_atlanta_animation_examples/app/modules/hero_detail/views/hero_detail_view.dart';
 import 'package:flutter_atlanta_animation_examples/app/modules/home/bindings/home_binding.dart';
 import 'package:flutter_atlanta_animation_examples/app/modules/home/views/home_view.dart';
+import 'package:flutter_atlanta_animation_examples/app/modules/rive_animation/bindings/rive_animation_binding.dart';
+import 'package:flutter_atlanta_animation_examples/app/modules/rive_animation/views/rive_animation_view.dart';
 import 'package:flutter_atlanta_animation_examples/app/modules/simple_animation/bindings/simple_animation_binding.dart';
 import 'package:flutter_atlanta_animation_examples/app/modules/simple_animation/views/simple_animation_view.dart';
 
@@ -36,6 +40,16 @@ class AppPages {
       name: _Paths.heroDetail,
       page: () => const HeroDetailView(),
       binding: HeroDetailBinding(),
+    ),
+    GetPage(
+      name: _Paths.customPainterAnimation,
+      page: () => const CustomPainterAnimationView(),
+      binding: CustomPainterAnimationBinding(),
+    ),
+    GetPage(
+      name: _Paths.riveAnimation,
+      page: () => RiveAnimationView(),
+      binding: RiveAnimationBinding(),
     ),
   ];
 }

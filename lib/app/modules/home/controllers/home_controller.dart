@@ -6,6 +6,9 @@ class HomeController extends GetxController {
   final List<DrawerItem> drawerItems = [
     DrawerItem(title: 'Simple Animation', route: Routes.simpleAnimation),
     DrawerItem(title: 'Grid Animation', route: Routes.gridAnimation),
+    DrawerItem(
+        title: 'Custom Painter Animation', route: Routes.customPainerAnimation),
+    DrawerItem(title: 'Rive Animation', route: Routes.riveAnimation),
   ];
 
   Future<void> navigateTo(String route) async {

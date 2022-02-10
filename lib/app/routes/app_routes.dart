@@ -8,6 +8,8 @@ abstract class Routes {
   static const simpleAnimation = _Paths.simpleAnimation;
   static const gridAnimation = _Paths.gridAnimation;
   static const heroDetail = _Paths.heroDetail;
+  static const customPainerAnimation = _Paths.customPainterAnimation;
+  static const riveAnimation = _Paths.riveAnimation;
 }
 
 abstract class _Paths {
@@ -15,4 +17,6 @@ abstract class _Paths {
   static const simpleAnimation = '/simple-animation';
   static const gridAnimation = '/grid-animation';
   static const heroDetail = '/hero-detail';
+  static const customPainterAnimation = '/custom-painter-animation';
+  static const riveAnimation = '/rive-animation';
 }
