@@ -35,8 +35,14 @@ class GridAnimationView extends GetView<GridAnimationController> {
                   child: SlideAnimation(
                     verticalOffset: 50,
                     child: FadeInAnimation(
-                      child: Container(
-                        color: Colors.primaries[index % Colors.accents.length],
+                      child: InkWell(
+                        onTap: () => controller.navigateTo(index),
+                        child: Hero(
+                          tag: '$index',
+                          child: Container(
+                            color: Colors.primaries[index % Colors.accents.length],
+                          ),
+                        ),
                       ),
                     ),
                   ))),

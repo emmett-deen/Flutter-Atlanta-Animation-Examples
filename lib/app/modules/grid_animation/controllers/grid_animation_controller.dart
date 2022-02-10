@@ -1,20 +1,11 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_atlanta_animation_examples/app/routes/app_pages.dart';
 import 'package:get/get.dart';
 
 class GridAnimationController extends GetxController {
-  //TODO: Implement GridAnimationController
-
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
+  void navigateTo(int index) {
+    var color = Colors.primaries[index % Colors.accents.length];
+    Get.toNamed(Routes.heroDetail,
+        arguments: {'color': color}, parameters: {'heroTag': '$index'});
   }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {}
-  void increment() => count.value++;
 }
