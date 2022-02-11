@@ -1,6 +1,13 @@
-# flutter_atlanta_animation_examples
+# Flutter Atlanta Animation Examples
 
-A new Flutter project.
+This project was used to demonstrate different types of animations at our meetup. You can find the video on [youtube](https://www.youtube.com/watch?v=jfysdjzkoJc).
+
+This project includes examples of:
+- Implicit Animations
+- Hero Animations
+- Package Animations
+- Custom Painter Animations
+- Rive Animations
 
 ## Getting Started
 
